@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Library</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+
+  <body>
+    <h1>My Library</h1>
+    <button id="add-book">Add New Book</button> 
+    <form id="bookform">
+      <h3>New Book</h3>
+      <label>Name
+        <input type="text" name="name">
+      </label>
+      <label>Author
+        <input type="text" name="author">
+      </label>
+      <label>No. of pages
+        <input type="number" name="pages">
+      </label>
+      <label>Read?<br>
+        <input type="radio" name="read" value="yes" checked="checked" class="radio">Yes
+        <input type="radio" name="read" value="no" class="radio">No
+      </label>
+      <input type="submit" value="Add to Library" id="submitbutton">
+
+    </form>
+    <div id="books">
+      <!-- <div class="library-entry"><h3>hobbit</h3><p><p>Author: jrr</p>
+        <p>No. of pages: 345</p>
+        <p>Read? Yes</p></p><button class="read-button">Toggle Read</button></div> -->
+    </div>
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>
