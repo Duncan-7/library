@@ -7,17 +7,19 @@ index = 0;
 
 let myLibrary = [];
 
-function Book(title, author, pages, read) {
-  this.title = title;
-  this.author = author;
-  this.pages = pages;
-  if(read == "yes"){
-    this.read = "Read";
-  } else {
-    this.read = "Unread";
+class Book {
+  constructor(title, author, pages, read) {
+    this.title = title;
+    this.author = author;
+    this.pages = pages;
+    if(read == "yes"){
+      this.read = "Read";
+    } else {
+      this.read = "Unread";
+    }
+    this.index = index
+    index++
   }
-  this.index = index
-  index++
 }
 
 function loadLibrary() {
